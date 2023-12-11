@@ -1,0 +1,171 @@
+.checkbtn{
+    color: black;
+    font-size: 1.4rem;
+    margin-left: 20px;
+    padding: 3px;
+    width: 35px;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: none;
+    justify-content: end;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width:576px){
+    .navContainer .bar{
+        text-align: center;
+        width: 100%;
+        height: 20vh;
+    }
+    .navContainer .bar .barhead{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navContainer .bar .barhead .links{
+        width: 100%;
+        text-indent: 10px;
+        margin-top: 10px;
+    }
+    .navContainer .bar .barend{
+        margin: 20px 0;
+        justify-content: center;
+    }
+    .navContainer .bar .barend .icons{
+        width: 80%;
+    }
+    .navContainer .bar .barhead .contact{
+        width: 80%;
+    }
+
+    nav{
+        display: block;
+    }
+    nav .navlinks{
+        position: absolute;
+        /* top: 50px; */
+        padding-top: 40px;
+        display: none;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+    }
+
+    nav .navlinks li{
+        height: 24.5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .navlinks .dropdown .dropdownlist{
+        position: absolute;
+        
+    }
+
+    nav .navlinks li:hover{
+        background-color: yellow;
+    }
+
+    nav .checkbtn{
+        display: block;
+    }
+
+    #check:checked~.navlinks{
+        display: flex;
+    }
+
+
+    .navContainer .datails .datailsSection{
+        display: inline-block;
+        width: 90%;
+        gap: 50px;
+        text-align: center;
+    }
+    .navContainer .datails .datailsSection .card .cardhead{
+        font-size: 13px;
+    }
+    .navContainer .datails .datailsSection .card .image{
+        margin-right: 20px;
+        width: 200px;
+    }
+    .navContainer .datails .datailsSection .card .cardBody h3{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .navContainer .datails .datailsSection .card .cardBody .em{
+        display: flex;
+        width: 100%;
+    }
+    
+    .navContainer .datails .datailsSection .card .cardBody .em .test{
+        margin-left: 10px;
+    }
+    .navContainer .datails .datailsSection .card .cardBody .em2{
+        /* display: flex; */
+        width: 100%;
+    }
+
+    .heroSection .jumbotron{
+        padding: 100px 100px;
+        text-align: center;
+    }
+    .heroSection .image{
+        display: none;
+    }
+    
+    .aboutContainer .aboutSection{
+        width: 90%;
+        display: inline;
+    }
+    .aboutContainer .aboutSection .about-1{
+        display: inline;
+    }
+    .aboutContainer .aboutSection .about-1 img{
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        height: 450px;
+    }
+    .aboutContainer .aboutSection .about-2{
+        display: inline;
+    }
+    .aboutContainer .aboutSection .about-2 img{
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        height: 450px;
+    }
+    .aboutContainer .aboutSection .about-2 .em{
+        width: 400px;
+    }
+    .aboutContainer .aboutSection .em{
+        margin-top: 10px;
+        padding: 20px 0 ;
+    }
+
+    .academicContainer{
+        height: 30vh;
+    }
+    .academic .academichead img{
+        width: 300px;
+        margin: 20px 0;
+    }
+    .academic .academicbody img{
+        width: 70px;
+    }
+
+    .footerContainer{
+        height: 135vh;
+        display: block;
+    }
+    .footerContainer  .footerCard{
+        padding: 30px;
+    }
+    .footerContainer  .footerCard .card .cardbody{
+        display: inline-block;
+    }
+    .footerend .em h6{
+        font-size: 10px;
+    }
+}
